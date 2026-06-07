@@ -1,22 +1,45 @@
-# Regression_Logistics_._Sentiment_Analysis-mainPerformed sentiment analysis on textual data such as tweets and reviews. A machine learning model was trained to classify text into positive or negative sentiment.
+# Sentiment Analysis with Logistic Regression
 
-## Deliverables
-Jupyter Notebook with preprocessing, model training, and evaluation
+This project demonstrates sentiment analysis, model based on movie review data using Logistic Regression. The model predicts whether a review expresses positive or negative sentiment based on the text provided. The application on #PepGuardiola from Twitter (X).
 
-Streamlit app for real‑time sentiment prediction
+## Project Structure
 
-Results: sentiment labels with accuracy scores
+- `classify_sentiment.ipynb`: Jupyter Notebook of Input Data, Preprocessing, until Visualizing Sentiment Analysis using Logistic Regression.
+- `app.py`: Main Streamlit application for running the sentiment analysis interface.
+- `logistic_regression_model.joblib`: Pre-trained Logistic Regression model.
+- `tfidf_vectorizer.joblib`: TF-IDF vectorizer for text preprocessing.
 
-## Tools Used
-Scikit‑learn – Logistic Regression model
+## Features
 
-TF‑IDF Vectorizer – Text feature extraction
+- Upload or input text to analyze sentiment.
+- Pre-trained model for high-accuracy predictions.
+- Real-time sentiment prediction.
 
-Streamlit – Interactive web app
+## Requirements
 
-## Highlights
-Cleaned and preprocessed text data
+Install the required dependencies with:
 
-Trained Logistic Regression model for sentiment classification
+```bash
+pip install -r requirements.txt
+```
 
-Built a Streamlit app where users can input text and get instant sentiment results
+## Pre-trained Model and Vectorizer
+
+The Logistic Regression model and TF-IDF vectorizer used in this project are pre-trained and available at the following locations:
+
+- [Logistic Regression Model](https://github.com/zenklinov/Regression_Logistic_-_Sentiment_Analysis_Movie_Data/blob/main/logistic_regression_model.joblib)
+- [TF-IDF Vectorizer](https://github.com/zenklinov/Regression_Logistic_-_Sentiment_Analysis_Movie_Data/blob/main/tfidf_vectorizer.joblib)
+
+Ensure these files are downloaded and placed in the appropriate directory before running the application.
+
+## Usage
+
+Run the Streamlit application with the following command:
+
+```bash
+streamlit run app.py
+```
+
+## Try it on Streamlit:
+
+https://regressionlogistic-sentimentanalysis-lgbxfzczme5clpzfct9qmg.streamlit.app/
